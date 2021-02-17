@@ -16,6 +16,8 @@ public class Usuario {
     private String nome;
     @Column(name = "cpf",length = 11, unique = true)
     private String cpf;
+    @Column(name = "nascimento",length = 8 )
+    private String nascimento;
 
     public Integer getId() {
         return id;
@@ -47,5 +49,12 @@ public class Usuario {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
+    }
+    public String getNascimento(){
+        return nascimento;
+    }
+
+    public void setNascimento(String nascimento) {
+        this.nascimento = nascimento;
     }
 }

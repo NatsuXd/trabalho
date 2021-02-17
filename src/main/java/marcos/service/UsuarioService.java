@@ -3,5 +3,5 @@ package marcos.service;
 import marcos.domain.entity.Usuario;
 
 public interface UsuarioService {
-    Usuario salvar(Usuario usario);
+    Usuario salvar(Usuario usuario);
 }

@@ -1,12 +1,19 @@
 package marcos.service.impl;
 
 import marcos.domain.entity.Vacinacao;
-import marcos.service.UsuarioService;
+import marcos.domain.repository.VacinacaoRepository;
+import marcos.service.VacinacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class VacinacaoServiceImpl implements UsuarioService {
+public class VacinacaoServiceImpl implements VacinacaoService {
     @Autowired
-    private Vacinacao repository;
+    private VacinacaoRepository repository;
+
+    @Override
+    public Vacinacao salvar(Vacinacao vacinacao) {
+        repository.salvar(vacinacao);
+        return vacinacao;
+    }
 }
