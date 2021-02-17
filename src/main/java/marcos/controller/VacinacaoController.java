@@ -1,7 +1,7 @@
 package marcos.controller;
 import io.swagger.annotations.ApiParam;
+import marcos.domain.entity.Vacinacao;
 import marcos.domain.entity.VacinacaoDTO;
-import marcos.domain.repository.Vacinacao;
 import marcos.service.VacinacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
@@ -30,7 +30,7 @@ public class VacinacaoController {
     ) {
         try {
             Vacinacao vacinacao = new Vacinacao();
-           vacinacao.setVacinan(request.getVacinan());
+           vacinacao.setVacina(request.getVacinan());
            vacinacao.setEmail(request.getEmail());
            vacinacao.setData(request.getData());
 
