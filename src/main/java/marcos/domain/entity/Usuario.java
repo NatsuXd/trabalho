@@ -10,11 +10,11 @@ public class Usuario {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name ="email",length = 100)
+    @Column(name ="email",length = 100, unique = true)
     private String email;
     @Column(name = "nome",length = 100)
     private String nome;
-    @Column(name = "cpf",length = 11)
+    @Column(name = "cpf",length = 11, unique = true)
     private String cpf;
 
     public Integer getId() {

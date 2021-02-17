@@ -14,7 +14,7 @@ import javax.persistence.EntityManager;
         @Autowired
         private EntityManager entityManager;
         @Transactional
-        public marcos.domain.repository.Usuario salvar(marcos.domain.repository.Vacinacao vacinacao) {
+        public marcos.domain.repository.Vacinacao salvar(marcos.domain.repository.Vacinacao vacinacao) {
             entityManager.persist(vacinacao);
             return vacinacao();
         }
