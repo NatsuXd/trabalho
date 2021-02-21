@@ -13,8 +13,8 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public Usuario salvar(Usuario usuario) {
-        repository.salvar(usuario);
-        return usuario;
+       return repository.salvar(usuario);
+
     }
 }
 

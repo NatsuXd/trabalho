@@ -13,7 +13,7 @@ public class VacinacaoServiceImpl implements VacinacaoService {
 
     @Override
     public Vacinacao salvar(Vacinacao vacinacao) {
-        repository.salvar(vacinacao);
-        return vacinacao;
+      return  repository.salvar(vacinacao);
+
     }
 }

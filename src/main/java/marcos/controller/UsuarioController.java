@@ -48,7 +48,8 @@ public class UsuarioController {
                 message = "EMAIL já cadastrado";
             }
             ErrorDTO error =new ErrorDTO(message);
-            return new ResponseEntity(error, HttpStatus.BAD_REQUEST);
+            return new
+                    ResponseEntity(error, HttpStatus.BAD_REQUEST);
         } catch (Exception ex) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
